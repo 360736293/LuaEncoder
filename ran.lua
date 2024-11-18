@@ -49,7 +49,7 @@ local function genvartable(data)
 end
 
 local delimiter = {"","_","__"}
-local key = "bug" -- 该字符串用于生成混淆的变量名, 字符串越长, 变量数量越多, 但会增加加密的耗时（不影响饥荒运行效率）
+local key = "bug" -- 该字符串用于生成混淆的变量名, 字符串越长, 变量数量越多, 但会增加加密的耗时
 local data = {delimiter}
 for i = 1, #key do
 	local c = string.sub(key, i, i)
